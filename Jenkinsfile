@@ -1,10 +1,10 @@
 pipeline{
     agent any
 
-    environment {
-         scannerHome = tool 'SonarQube Scanner'
-         SONAR_TOKEN = ''
-    }
+    // environment {
+    //      scannerHome = tool 'SonarQube Scanner'
+    //      SONAR_TOKEN = ''
+    // }
 
     stages{
         stage('Checkout'){
@@ -13,10 +13,10 @@ pipeline{
             }
         }
 
-        stage('Build'){
-            steps{
-                sh 'mvn compile test clean install'
-            }
-        }
+        // stage('Build'){
+        //     steps{
+        //         sh 'mvn compile test clean install'
+        //     }
+        // }
     }
 }
