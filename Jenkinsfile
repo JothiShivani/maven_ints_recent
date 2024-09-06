@@ -1,10 +1,7 @@
 pipeline{
     agent any
 
-    // environment {
-    //      scannerHome = tool 'SonarQube Scanner'
-    //      SONAR_TOKEN = ''
-    // }
+   
 
     stages{
         stage('Checkout'){
